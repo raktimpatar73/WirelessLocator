@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabFirst">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme">
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="900dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/border">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter the cell ID."
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:paddingLeft="4dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="sans-serif-condensed"
+
+                />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText3"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="4dp"
+                    android:hint="@string/cellid"
+                    android:textColorHint="#2d56a7"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter the coordinates here."
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:paddingLeft="4dp"
+                android:paddingTop="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="sans-serif-condensed"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText1"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="4dp"
+                        android:hint="@string/xcor"
+                        android:textColorHint="#2d56a7"
+
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText2"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="4dp"
+                        android:hint="@string/ycor"
+                        >
+
+                    </EditText>
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button"
+                android:text="GO"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded"
+                style="@style/AppTheme"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="20dp"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
